@@ -1,0 +1,101 @@
+<!doctype html>
+<!--
+  TEMPLATE. Copy to <app>/privacy/privacy-policy.html and work through it.
+
+  Replace every {{PLACEHOLDER}}. Delete any section the app does not do -- an
+  honest short policy beats a thorough one that claims things you do not do.
+  Every sentence here has to be true of the build you are about to ship.
+
+  The three that go stale first, in order:
+    1. the effective date           -- move it whenever the content moves
+    2. "we collect nothing"         -- false the moment any SDK arrives
+    3. "data never leaves the phone" -- false the moment backup is on
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — {{APP_NAME}}</title>
+<style>
+  body{font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1b1f1e;background:#fbfdfb;margin:0}
+  main{max-width:680px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:1.6rem;margin:0 0 .2rem}
+  h2{font-size:1.1rem;margin:2rem 0 .4rem}
+  .muted{color:#5a6460;font-size:.95rem;margin-top:0}
+  a{color:#0f6e56}
+  @media (prefers-color-scheme:dark){
+    body{background:#101211;color:#e6ede9}.muted{color:#aab4af}a{color:#5dcaa5}
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy policy</h1>
+<p class="muted">{{APP_NAME}} (Android, package {{PACKAGE_ID}}) · Effective {{EFFECTIVE_DATE}}</p>
+
+<p><strong>In short:</strong> {{ONE_LINE_SUMMARY}}</p>
+
+<h2>Who we are</h2>
+<p>{{DEVELOPER_NAME}}. Contact: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>.</p>
+
+<h2>What the app stores on your phone</h2>
+<p>{{WHAT_IS_STORED_LOCALLY}}</p>
+
+<h2>What we collect</h2>
+<!-- Be specific. "Anonymous usage data" is not specific. Name the SDK, say what
+     it sends, and say what it never sends. -->
+<p>{{WHAT_IS_COLLECTED}}</p>
+
+<!-- ===== Delete this whole block if the app has no ads ===== -->
+<h2>Advertising</h2>
+<p>The app shows ads from Google AdMob. AdMob may use your device's advertising ID
+to limit repeats and measure performance. {{AD_DETAIL}}</p>
+<h2>Your ad choices</h2>
+<p>You can reset or delete the advertising ID in Android Settings under Privacy, and in
+the European Economic Area, the UK and Switzerland the consent screen shown on first
+launch can be reopened from {{CONSENT_LOCATION}}.</p>
+<!-- ===== end ads block ===== -->
+
+<!-- ===== Delete if the app has no analytics or crash reporting ===== -->
+<h2>Analytics and crash reporting</h2>
+<p>{{ANALYTICS_DETAIL}}</p>
+<!-- ===== end analytics block ===== -->
+
+<h2>Permissions</h2>
+<p>{{PERMISSIONS}}</p>
+
+<h2>How your data is protected</h2>
+<p>{{PROTECTION}}</p>
+
+<!-- ===== Delete if allowBackup is false ===== -->
+<h2>Backup to your Google account</h2>
+<p>Android's own backup copies {{BACKED_UP}} to your Google account, so a new phone
+starts where you left off. {{BACKUP_EXCLUSIONS}} You can turn it off in Android
+Settings under System, Backup.</p>
+<!-- ===== end backup block ===== -->
+
+<h2>Exporting, importing and sharing</h2>
+<p>{{EXPORT_DETAIL}}</p>
+
+<h2>How long data is kept, and how to delete it</h2>
+<p>{{RETENTION}}</p>
+
+<h2>Children</h2>
+<p>{{CHILDREN}}</p>
+
+<!-- ===== Delete if the app holds nothing health-related ===== -->
+<h2>Health information</h2>
+<p>{{HEALTH_DETAIL}}</p>
+<!-- ===== end health block ===== -->
+
+<h2>Changes to this policy</h2>
+<p>If the app's handling of data changes, this page is updated before that version is
+released, with a new effective date. {{CHANGE_LOG}}</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a></p>
+
+</main>
+</body>
+</html>
