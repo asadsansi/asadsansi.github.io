@@ -19,7 +19,7 @@
 <body>
 <main>
   <h1>Privacy policy</h1>
-  <p class="muted">BMI Calculator: Body Fat &amp; BMR (Android, package bmi.calculator.bmicalculator.bodymass.bodymassindex) · Effective 8 October 2026</p>
+  <p class="muted">BMI Calculator: Body Fat &amp; BMR (Android, package bmi.calculator.bmicalculator.bodymass.bodymassindex) · Effective 19 October 2026</p>
 
   <p class="note"><strong>In short:</strong> everything you enter (your measurements, results, history and photos) stays in the app's private storage on your phone, and only leaves it when you choose to export or share it, or through Android's own backup to your Google account. The app shows ads from Google AdMob, and reports app usage and crashes to Google so we can see what is working and what is broken. Those services receive device and usage information — never your measurements, your results or your photos.</p>
 
@@ -43,15 +43,16 @@
   <h3>App analytics</h3>
   <p>Firebase Analytics, a service of Google LLC, records which parts of the app are used, so we can tell whether a change helped or hurt. It is limited to a fixed list of actions:</p>
   <ul>
-    <li>finishing first-time setup, with how long it took, grouped into broad bands, and whether you use metric or imperial units;</li>
+    <li>first-time setup: that the setup screen appeared, that it was finished, and that the first result was shown, with how long each took, grouped into broad bands, and whether you use metric or imperial units;</li>
     <li>opening a calculator, with which calculator and which comparison standard is selected;</li>
     <li>logging a weight — <em>that</em> one was logged, never the weight itself. The count is grouped as "1", "2–5" or "6 or more";</li>
     <li>changing your comparison standard;</li>
     <li>exporting a CSV or PDF;</li>
-    <li>being shown the "rate the app" prompt.</li>
+    <li>being shown the "rate the app" prompt;</li>
+    <li>the weekly weigh-in reminder: that it was switched on, and whether that was from the offer after your second weigh-in or from Profile (never the day or time you chose); that the offer was turned down; and that the app was opened from a reminder.</li>
   </ul>
   <p>That list is the whole of it. No weight, height, BMI, body-fat figure, waist measurement, age, name or photo is sent, and the app contains no way to send one: the events are defined in code as a fixed set, so a measurement cannot be attached to one even by mistake.</p>
-  <p>Google also records standard information with these events, such as country, device model, operating system version, app version and language. We do not ask Firebase for your advertising ID.</p>
+  <p>Google also records standard information with these events, such as country, device model, operating system version, app version and language. If you buy Remove ads, Firebase Analytics also records the purchase itself (the product, its price and currency), as it does for every app sold through Google Play; it never receives your payment details. We do not ask Firebase for your advertising ID.</p>
 
   <h3>Crash reports</h3>
   <p>Firebase Crashlytics, also a service of Google LLC, sends a report when the app crashes: what the app was doing at the time, the device model and the operating system version. This is how we find and fix faults. Crash reports contain no information you entered.</p>
@@ -64,7 +65,7 @@
   <p>After you have used the app for a while, Google Play may show its own "rate this app" dialog inside the app. The dialog, the star rating and any review you write belong to Google Play, not to us: we never see who was asked, who rated, or what anyone wrote, and nothing you entered in the app is attached to it. The app only ever records, on your phone, that the dialog has been shown once so you are not asked again.</p>
 
   <h2>Advertising</h2>
-  <p>The app is free and shows a small banner ad on three screens (Calculators, History and Profile). Ads never appear on your results, on a calculator, or next to your photos. The ads are provided by Google AdMob, a service of Google LLC.</p>
+  <p>The app is free and shows ads in three places: a small banner on the Calculators and Profile screens, and one ad, marked "Ad", in the list on the History screen. Ads never appear on your results, on a calculator, or next to your photos. You can remove all ads with a one-time purchase (see Removing ads below). The ads are provided by Google AdMob, a service of Google LLC.</p>
   <p>To show and measure ads, and to prevent fraud, the Google Mobile Ads SDK in the app collects and sends to Google:</p>
   <ul>
     <li>your device's advertising ID;</li>
@@ -80,14 +81,20 @@
     <li><strong>European Economic Area, UK and Switzerland:</strong> the app asks for your consent before any personalised ad is shown. You can change your choice at any time in Profile → <strong>Ad privacy choices</strong>. Where consent rules apply in other regions, including some US states, the same option appears.</li>
     <li><strong>Everywhere:</strong> you can reset or delete your advertising ID, or opt out of personalised ads, in your phone's settings (Settings → Privacy → Ads, or Settings → Google → Ads, depending on the phone).</li>
   </ul>
-  <p>The app uses the internet only to fetch ads. Every calculator works fully offline; without a connection, no ad is shown.</p>
+  <p>The app uses the internet only to fetch ads and, if you buy it, to check the Remove ads purchase with Google Play. Every calculator works fully offline; without a connection, no ad is shown.</p>
+
+  <h2>Removing ads</h2>
+  <p>"Remove ads" is a one-time purchase made through Google Play. Google Play handles the payment, the receipt and any refund; we never see your payment details, your name or your email address. The app only asks Google Play whether the Google account on the phone owns "Remove ads", and remembers the answer on your phone. Because Google Play keeps that record, the purchase comes back on a new phone or after reinstalling, without an account. How Google handles purchases is described in Google's privacy policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
 
   <h2>Permissions</h2>
-  <p>The app asks you for no permissions. There is no prompt to accept or refuse. The Google services it uses need a few that Android grants automatically:</p>
+  <p>The app asks you for one permission, and only if you choose to: on Android 13 and later, switching on the weekly weigh-in reminder asks whether the app may show notifications. You can switch it on in Profile, or by tapping "Remind me" when the app offers the reminder once, after your second weigh-in. The reminder is off until you turn it on, the notification says only that it is time to log your weight, and the day and time you choose are stored on your phone. If you say no, the reminder stays off and nothing else changes.</p>
+  <p>The app and the Google services it uses also need a few permissions that Android grants automatically, with no prompt:</p>
   <ul>
     <li>internet and network access, used by ads, analytics and crash reports;</li>
     <li>the advertising ID and the related ad-services permissions, used by the advertising service;</li>
     <li>background scheduling, used by the ad service to prepare requests off the main thread;</li>
+    <li>starting after the phone restarts, used only to set the weekly reminder again if you turned it on;</li>
+    <li>Google Play billing, used only for the Remove ads purchase;</li>
     <li>permission to read the Google Play install referrer, which tells the analytics service how the app was found — for example which listing or campaign led to the install. It carries no information about you.</li>
   </ul>
   <p>When you add a photo, you choose it with Android's own photo picker, and the app receives only that picture. The app never asks for the camera, your location, your contacts, your files or your gallery.</p>
@@ -133,7 +140,7 @@
   <p>This app is not a medical device and does not diagnose, treat, cure, or prevent any medical condition. Talk to a healthcare professional about your results.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If the app's handling of data changes, this page will be updated before that version is released, with a new effective date. The version of 29 September 2026 added the Advertising and Your ad choices sections. The version of 8 October 2026 added analytics and crash reporting, and Android's own backup.</p>
+  <p>If the app's handling of data changes, this page will be updated before that version is released, with a new effective date. The version of 29 September 2026 added the Advertising and Your ad choices sections. The version of 8 October 2026 added analytics and crash reporting, and Android's own backup. The version of 19 October 2026 added the ad in the History list, the Remove ads purchase, the optional weekly reminder and the analytics actions that go with them.</p>
 
   <h2>Contact</h2>
   <p>Asad Ullah Sansi · <a href="mailto:asadullahsansi@gmail.com">asadullahsansi@gmail.com</a></p>
