@@ -3,8 +3,9 @@
   CheckScan privacy policy. Every sentence here must stay true of the shipped build.
   The three that go stale first: the effective date, "we collect nothing" (false once an
   SDK arrives), and "data never leaves the phone" (false once a network feature or backup is on).
-  CheckScan has Firebase Analytics + Crashlytics (no advertising ID), an opt-in product lookup
-  and an opt-in Google Drive backup — all reflected below.
+  CheckScan has Firebase Analytics + Crashlytics (no advertising ID), the Google Play install
+  referrer (anonymous install source, read once on first launch, for Firebase attribution), an
+  opt-in product lookup and an opt-in Google Drive backup — all reflected below.
 -->
 <html lang="en">
 <head>
@@ -48,6 +49,11 @@ stability information. It
 does <strong>not</strong> include the content you scan, generate or type, and the app does
 <strong>not</strong> use an advertising ID: advertising-ID collection is turned off and the
 advertising-ID permissions are removed from the app.</p>
+
+<p>When you first open the app, CheckScan also reads the Google Play <strong>install referrer</strong>
+— the anonymous source that led to the install, such as a search or a link — so Firebase can measure
+where installs come from. It carries no advertising ID and none of the content you scan, generate or
+type.</p>
 
 <h2>Product lookup</h2>
 <p>When you tap "Look up product" on a scanned barcode, and only then, CheckScan sends that
